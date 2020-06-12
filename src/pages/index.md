@@ -7,6 +7,7 @@ hero:
       url: http://example.com
     - label: I Want to Help
       url: http://example.com
+  overlayColor: black
 mission:
   step:
     - image: /img/mission-1.png
@@ -22,7 +23,8 @@ section:
   row:
     - image: /img/placeholder.png
       heading: Need help?
-      text: Sign up to make a request for a food box, small errand, or a pharmacy
+      text:
+        Sign up to make a request for a food box, small errand, or a pharmacy
         pickup. A local coordinator will match you with a volunteer who will
         take care of your need ASAP.
       button: I Need Help
@@ -46,11 +48,13 @@ contribute:
       url: https://github.com/factn
     - heading: Community
       button: Join us on Slack
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      text:
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt dipiscing elit.
       url: https://join.slack.com/t/mutualaidworld/shared_invite/zt-dh0661zb-7IteFzZm~Z8Qgizg0oulaQ
       image: /img/slack.png
-    - text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    - text:
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt dipiscing elit.
       heading: Donors
       button: Donate

@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Hero = ({ title, button }) => (
-  <header className="siteHero">
-    <div className="siteHero-content">
+const Hero = ({ title, button, overlayColor }) => (
+  <div className="hero">
+    {overlayColor && (
+      <div className="hero_overlay" style={{ backgroundColor: overlayColor }} />
+    )}
+    <div className="hero_content">
       <h1>{title}</h1>
       <div className="buttons-wrapper">
         {button.map((item, i) => (
@@ -13,17 +16,22 @@ const Hero = ({ title, button }) => (
         ))}
       </div>
     </div>
-  </header>
+  </div>
 );
 
+Hero.defaultProps = {
+  overlayColor: '',
+};
+
 Hero.propTypes = {
-  title: PropTypes.string,
   button: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string,
       url: PropTypes.string,
     }),
   ),
+  title: PropTypes.string,
+  overlayColor: PropTypes.string,
 };
 
 export default Hero;
